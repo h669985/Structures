@@ -7,5 +7,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="BinaryTree" />
+    <orderEntry type="module" module-name="Deque" />
+    <orderEntry type="module" module-name="List" />
+    <orderEntry type="module" module-name="MaxHeap" />
+    <orderEntry type="module" module-name="Queue" />
+    <orderEntry type="module" module-name="Stack" />
   </component>
 </module>

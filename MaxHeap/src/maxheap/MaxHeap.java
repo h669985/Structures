@@ -1,4 +1,4 @@
-package ArrayMaxHeap;
+package maxheap;
 
 import adt.MaxHeapADT;
 

@@ -1,4 +1,4 @@
-import ArrayMaxHeap.MaxHeap;
+import maxheap.MaxHeap;
 import adt.MaxHeapADT;
 import org.junit.jupiter.api.Test;
 

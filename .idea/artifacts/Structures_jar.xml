@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact name="Structures:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Structures_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Structures.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="Structures" />
+        <element id="module-output" name="BinaryTree" />
+        <element id="module-test-output" name="BinaryTree" />
+        <element id="module-output" name="Stack" />
+        <element id="module-test-output" name="Stack" />
+        <element id="module-output" name="Queue" />
+        <element id="module-test-output" name="Queue" />
+        <element id="module-output" name="Deque" />
+        <element id="module-test-output" name="Deque" />
+        <element id="module-output" name="List" />
+        <element id="module-test-output" name="List" />
+        <element id="module-output" name="MaxHeap" />
+        <element id="module-test-output" name="MaxHeap" />
+      </element>
+      <element id="library" level="module" name="JUnit5.8.1" module-name="BinaryTree" />
+      <element id="library" level="module" name="JUnit5.8.1" module-name="Stack" />
+      <element id="library" level="module" name="JUnit5.8.1" module-name="MaxHeap" />
+      <element id="library" level="module" name="JUnit5.8.1" module-name="Queue" />
+      <element id="library" level="module" name="JUnit5.8.1" module-name="Deque" />
+      <element id="library" level="module" name="JUnit5.8.1" module-name="List" />
+    </root>
+  </artifact>
+</component>
