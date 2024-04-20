@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @version 1.0
  */
 
+@SuppressWarnings("FieldCanBeLocal")
 abstract class AbstractBinaryTreeTest {
     private BinaryTreeADT<Integer> emptyTree;
 
