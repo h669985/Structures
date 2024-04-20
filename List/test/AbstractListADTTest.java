@@ -2,7 +2,6 @@ import adt.ListADT;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -78,7 +77,7 @@ abstract class AbstractListADTTest {
 
     @Test
     void addWithGivenPositionShouldThrowIndexOutOfBoundsExceptionIfTheGivenPositionIsOutOfBoundsTest() {
-        assertThrows(IndexOutOfBoundsException.class, () -> {listWithTwoEntries.add(4, "Fred");});
+        assertThrows(IndexOutOfBoundsException.class, () -> listWithTwoEntries.add(4, "Fred"));
     }
 
     @Test
@@ -96,7 +95,7 @@ abstract class AbstractListADTTest {
 
     @Test
     void removeShouldThrowIndexOutOfBoundsExceptionIfTheGivenPositionIsOutOfBoundsTest() {
-        assertThrows(IndexOutOfBoundsException.class, () -> {listWithTwoEntries.remove(4);});
+        assertThrows(IndexOutOfBoundsException.class, () -> listWithTwoEntries.remove(4));
     }
 
     @Test
@@ -112,7 +111,7 @@ abstract class AbstractListADTTest {
 
     @Test
     void replaceShouldThrowIndexOutOfBoundsExceptionIfTheGivenPositionIsOutOfBoundsTest() {
-        assertThrows(IndexOutOfBoundsException.class, () -> {listWithTwoEntries.replace(4, "Ted");});
+        assertThrows(IndexOutOfBoundsException.class, () -> listWithTwoEntries.replace(4, "Ted"));
     }
 
     @Test
@@ -128,7 +127,7 @@ abstract class AbstractListADTTest {
 
     @Test
     void getEntryShouldThrowIndexOutOfBoundsExceptionIfTheGivenPositionIsOutOfBoundsTest() {
-        assertThrows(IndexOutOfBoundsException.class, () -> {listWithTwoEntries.getEntry(4);});
+        assertThrows(IndexOutOfBoundsException.class, () -> listWithTwoEntries.getEntry(4));
     }
 
     @Test

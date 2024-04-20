@@ -96,12 +96,12 @@ abstract class AbstractDequeADTTest {
 
     @Test
     void removeFrontShouldThrowEmptyQueueExceptionOnAnEmptyDequeTest() {
-        assertThrows(EmptyQueueException.class, ()->{emptyDeque.removeFront();});
+        assertThrows(EmptyQueueException.class, ()-> emptyDeque.removeFront());
     }
 
     @Test
     void removeBackShouldThrowEmptyQueueExceptionOnAnEmptyDequeTest() {
-        assertThrows(EmptyQueueException.class, ()->{emptyDeque.removeBack();});
+        assertThrows(EmptyQueueException.class, ()-> emptyDeque.removeBack());
     }
 
     @Test
@@ -132,12 +132,12 @@ abstract class AbstractDequeADTTest {
 
     @Test
     void getFrontShouldThrowEmptyQueueExceptionOnAnEmptyDequeTest() {
-        assertThrows(EmptyQueueException.class, ()->{emptyDeque.getFront();});
+        assertThrows(EmptyQueueException.class, ()-> emptyDeque.getFront());
     }
 
     @Test
     void getBackShouldThrowEmptyQueueExceptionOnAnEmptyDequeTest() {
-        assertThrows(EmptyQueueException.class, ()->{emptyDeque.getBack();});
+        assertThrows(EmptyQueueException.class, ()-> emptyDeque.getBack());
     }
 
     @Test

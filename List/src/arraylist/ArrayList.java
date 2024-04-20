@@ -16,6 +16,7 @@ import java.util.Arrays;
  *          Fikset litt av Lars-Petter Helland februar 2024
  *          Ever so slightly edited by Jonas Hellevik
  */
+@SuppressWarnings("uncheked")
 public class ArrayList<T> implements ListADT<T> {
 
 	private static final int DEFAULT_CAPACITY = 10;
@@ -149,13 +150,12 @@ public class ArrayList<T> implements ListADT<T> {
 
 	// Makes room for a new entry at newPosition.
 	private void makeRoom(int givenPosition) {
-		
-		int newIndex = givenPosition;
-		int lastIndex = n;
+
+        int lastIndex = n;
 
 		// Move each entry to next higher index, starting at end of
 		// list and continuing until the entry at newIndex is moved
-		for (int index = lastIndex; index >= newIndex; index--) {
+		for (int index = lastIndex; index >= givenPosition; index--) {
 			tab[index + 1] = tab[index];
 		}
 	}
@@ -163,9 +163,8 @@ public class ArrayList<T> implements ListADT<T> {
 	// Shifts entries that are beyond the entry to be removed to the
 	// next lower position.
 	private void removeGap(int givenPosition) {
-		
-		int removedIndex = givenPosition;
-		for (int index = removedIndex; index < n; index++) {
+
+        for (int index = givenPosition; index < n; index++) {
 			tab[index] = tab[index + 1];
 		}
 	}

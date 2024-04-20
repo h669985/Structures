@@ -89,10 +89,10 @@ abstract class AbstractQueueADTTest {
 
     @Test
     void dequeueShouldThrowEmptyQueueExceptionOnAnEmptyQueueTest() {
-        assertThrows(EmptyQueueException.class,()->{emptyQueue.dequeue();});
+        assertThrows(EmptyQueueException.class,()-> emptyQueue.dequeue());
 
         queueWithOneElement.dequeue();
-        assertThrows(EmptyQueueException.class,()->{queueWithOneElement.getFront();});
+        assertThrows(EmptyQueueException.class,()-> queueWithOneElement.getFront());
     }
 
     @Test
@@ -114,10 +114,10 @@ abstract class AbstractQueueADTTest {
 
     @Test
     void getFrontShouldThrowEmptyQueueExceptionOnAnEmptyQueueTest() {
-        assertThrows(EmptyQueueException.class,()->{emptyQueue.getFront();});
+        assertThrows(EmptyQueueException.class,()-> emptyQueue.getFront());
 
         queueWithOneElement.dequeue();
-        assertThrows(EmptyQueueException.class,()->{queueWithOneElement.getFront();});
+        assertThrows(EmptyQueueException.class,()-> queueWithOneElement.getFront());
     }
 
     @Test

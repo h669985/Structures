@@ -8,7 +8,6 @@ package adt;
  * @author Timothy M. Henry
  * @version 5.0
  */
-@SuppressWarnings("serial")
 public class EmptyQueueException extends RuntimeException {
 	
 	public EmptyQueueException() {
